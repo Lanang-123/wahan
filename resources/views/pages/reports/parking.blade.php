@@ -91,6 +91,7 @@
                                             <th scope="col">Waktu Transaksi</th>
                                             <th scope="col">Durasi</th>
                                             <th scope="col">Harga</th>
+                                            <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -114,6 +115,12 @@
                                                 <td>{{ $item->transaction_time }}</td>
                                                 <td>{{ $item->duration_display }}</td>
                                                 <td>{{ $item->carType->price_display }}</td>
+                                                <td>
+                                                    <a class="btn btn-success" href="{{ route('print-parking', ['id' => $item->id]) }}">
+                                                        Detail
+                                                    </a>
+                                                </td>
+                                                        
                                             </tr>
                                         @endforeach
                                     </tbody>

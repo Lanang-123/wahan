@@ -39,7 +39,7 @@
         <table width="100%" style="border-bottom: 1px solid #aaa">
             <tr>
                 <td width="60">
-                    {!! QrCode::size(50)->generate($item->checkin_number); !!}</td>
+                    {!! QrCode::size(50)->generate($item->checkin_number) !!}</td>
 
                 <td>
                     <div class="center font-16 bold" style="margin-bottom: 5px">
@@ -86,7 +86,7 @@
         </table>
         <div class="center bold">Terima Kasih</div>
         <div style="margin-top: 10px">
-            <a href="{{route('new-parking')}}">Kembali</a>
+            <a href="{{route('report-parkings')}}">Kembali</a>
             <button onclick="cetak()">Print</button>
         </div>
     </div>

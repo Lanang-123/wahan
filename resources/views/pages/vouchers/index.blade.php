@@ -50,7 +50,7 @@
                                     @foreach ($data as $key => $item)
                                         <tr>
                                             <th scope="row">{{$key + 1}}</th>
-                                            <td>{!! QrCode::size(50)->generate($item->code); !!}</td>
+                                            <td>{!! QrCode::size(50)->generate($item->code) !!}</td>
                                             <td>{{ $item->code }}</td>
                                             <td>{{ $item->nominal_display }}</td>
                                             <td>{{ $item->status_display }}</td>

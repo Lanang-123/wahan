@@ -109,10 +109,10 @@
                         <div>{{$item->ticketType->price_display}}</div>
                     </div>
                     <div class="qr-1">
-                        {!! QrCode::size(40)->generate($item->code); !!}
+                        {!! QrCode::size(40)->generate($item->code) !!}
                     </div>
                     <div class="qr-2">
-                        {!! QrCode::size(50)->generate($item->code); !!}
+                        {!! QrCode::size(50)->generate($item->code) !!}
                     </div>
                 </div>
                 {{-- <div class="tic-wrapp">

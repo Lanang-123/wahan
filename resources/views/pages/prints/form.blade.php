@@ -68,7 +68,7 @@
                                                                     <span class="checkmark"></span>
                                                                 </label>
                                                                 </th>
-                                                            <td>{!! QrCode::size(50)->generate($item->code); !!}</td>
+                                                            <td>{!! QrCode::size(50)->generate($item->code) !!}</td>
                                                             <td>{{ $item->ticket_type_name }}</td>
                                                         </tr>
                                                     @endforeach
@@ -117,7 +117,7 @@
                                                                     <span class="checkmark"></span>
                                                                 </label>
                                                             </th>
-                                                            <td>{!! QrCode::size(50)->generate($item->code); !!}</td>
+                                                            <td>{!! QrCode::size(50)->generate($item->code) !!}</td>
                                                             <td>{{ $item->nominal }}</td>
                                                         </tr>
                                                     @endforeach

@@ -80,7 +80,7 @@ class RoleController extends Controller
         ];
 
         $item = $this->roles->getByUuid($uuid);
-        if (!$item) {
+        if (!$item) { 
             return redirect($this->routeIndex)->with(['error'=> 'Data tidak dapat ditemukan']);
         }
 

@@ -92,7 +92,7 @@
                         <div>{{$item->code}}</div>
                     </div>
                     <div class="qr-3">
-                        {!! QrCode::size(90)->generate($item->code); !!}
+                        {!! QrCode::size(90)->generate($item->code) !!}
                     </div>
                 </div>
             @endforeach

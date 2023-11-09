@@ -90,7 +90,7 @@
     
                                             <tr>
                                                 <th scope="row">{{$data->firstItem() + $key}}</th>
-                                                <td>{!! QrCode::size(50)->generate($item->code); !!}</td>
+                                                <td>{!! QrCode::size(50)->generate($item->code) !!}</td>
                                                 <td>{{ $item->code }}</td>
                                                 <td>{{ $item->ticket_type_name }}</td>
                                                 <td>{{ $item->status_display }}</td>

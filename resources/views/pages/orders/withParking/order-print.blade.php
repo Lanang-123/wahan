@@ -39,7 +39,7 @@
         <table width="100%" style="border-bottom: 1px solid #aaa">
             <tr>
                 <td width="60">
-                    {!! QrCode::size(50)->generate($item->order_number); !!}</td>
+                    {!! QrCode::size(50)->generate($item->order_number) !!}</td>
 
                 <td>
                     <div class="center font-16 bold" style="margin-bottom: 5px">

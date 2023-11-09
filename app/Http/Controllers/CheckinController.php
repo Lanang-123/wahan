@@ -71,7 +71,7 @@ class CheckinController extends Controller
         if ($item) {
             $input = ['checkin_number' => Helper::getMemberNumber($item->id)];
             $this->checkinParkings->update($item, $input);
-            return redirect(route('print-parking', ['id' => $item->id]));
+            return redirect(route('report-parkings'));
         } else {
             return redirect(route('new-parking'))->with(['error'=> 'Terjadi kesalahan saat input database']);
 
@@ -83,7 +83,7 @@ class CheckinController extends Controller
     {
         $item = $this->checkinParkings->find($id);
         if (!$item) {
-
+            return view('pages.checkins.parking-print');
         }
         return view('pages.checkins.parking-print', compact('item'));
     }

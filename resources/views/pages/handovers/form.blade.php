@@ -17,7 +17,7 @@
                             @if ($items AND count($items) > 0)
                                 @foreach ($items as $item)
                                     <div class="col-md-1 form-group mb-3 text-center">
-                                        {!! QrCode::size(50)->generate($item->code); !!}
+                                        {!! QrCode::size(50)->generate($item->code) !!}
                                         <div>{{$item->code}}</div>
                                     </div>
                                 @endforeach
