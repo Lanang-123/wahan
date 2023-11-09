@@ -1,0 +1,77 @@
+{
+    "Jembrana": {
+        "Melaya": ["Gilimanuk", "Melaya", "Candikusuma", "Tuwed", "Tukadaya", "Manistutu", "Warnasari", "Nusa Sari", "Ekasari", "Blimbingsari"],
+        "Negara": ["Cupel", "Tegal Badeng Barat", "Tegal Badeng Timur", "Pengambengan", "Loloan Barat", "Lelateng", "Banjar Tengah", "Baluk", "Banyubiru", "Kaliakah", "Berangbang", "Baler Bale Agung"],
+        "Jembrana": ["Perancak", "Air Kuning", "Yeh Kuning", "Budeng", "Sangkaragung", "Dauhwaru", "Loloan Timur", "Pendem", "Batuagung", "Dangin Tukadaya"],
+        "Mendoyo": ["Mendoyo Dauh Tukad", "Mendoyo Dangin Tukad", "Pohsanten", "Pergung", "Delod Berawah", "Tegal Cangkring", "Penyaringan", "Yeh Embang Kauh", "Yeh Embang", "Yeh Embang Kangin", "Yeh Sumbul"],
+        "Pekutatan": ["Medewi", "Pulukan", "Pekutatan", "Pangyangan", "Gumbrih", "Pengeragoan", "Asahduren", "Manggissari"]
+    },
+    "Gianyar": {
+        "Sukawati" : ["Batubulan", "Batubulan Kangin", "Ketewel", "Guwang", "Sukawati", "Celuk", "Singapadu", "Singapadu Tengah", "Singapadu Kaler", "Batuan", "Batuan Kaler", "Kemenuh"],
+        "Blahbatuh" : ["Saba", "Pering", "Keramas", "Medahan", "Bona", "Belega", "Blahbatuh", "Buruan", "Bedulu"],
+        "Gianyar" : ["Lebih", "Tulikup", "Temesi", "Sidan", "Samplangan", "Serongga", "Abianbase", "Gianyar", "Beng", "Bitera", "Bakbakan", "Siangan", "Suwat", "Petak", "Petak Kaja", "Sumita", "Tegal Tugu"],
+        "Tampaksiring" : ["Pejeng Kawan", "Pejeng", "Pejeng Kelod", "Pejeng Kangin", "Pejeng Kaja", "Sanding", "Tampaksiring", "Manukaya"],
+        "Ubud" : ["Singekerta", "Lodtunduh", "Mas", "Peliatan", "Petulu", "Ubud", "Sayan", "Kedewatan"],
+        "Tegallalang" : ["Keliki", "Tegallalang", "Kenderan", "Kedisan", "Pupuan", "Sebatu", "Taro"],
+        "Payangan" : ["Melinggih Kelod", "Melinggih", "Kelusa", "Beresela", "Bukian", "Puhu", "Buahan", "Buahan Kaja", "Kerta"]
+    },
+    "Karangasem": {
+        "Rendang" : ["Pesaban", "Nongan", "Rendang", "Menanga", "Besakih", "Pempatan"],
+        "Sidemen" : ["Tangkup", "Talibeng", "Telagatawang", "Sidemen", "Sindu Wati", "Sangkan Gunung", "Loka Sari", "Kertha Buana", "Tri Eka Buana", "Wisma Kerta"],
+        "Manggis" : ["Antiga", "Gegelang", "Padangbai", "Ulakan", "Manggis", "Selumbung", "Ngis", "Nyuh Tebel", "Tenganan", "Antiga Kelod", "Sengkidu", "Pesedahan"],
+        "Karangasem" : ["Bugbug", "Pertima", "Padang Kerta", "Karangasem", "Tumbu", "Tegallinggah", "Bukit", "Seraya Barat", "Seraya", "Seraya Timur"],
+        "Abang" : ["Ababi", "Tiyingtali", "Abang", "Pidpid", "Nawakerti", "Kesimpar", "Tista", "Kerta Mandala", "Culik", "Datah", "Laba Sari", "Purwakerti", "Bunutan", "Tri Buana"],
+        "Bebandem" : ["Sibetan", "Bebandem", "Bungaya", "Bungaya Kangin", "Budakeling", "Bhuana Giri", "Jungutan", "Macang"],
+        "Selat" : ["Muncan", "Pering Sari", "Selat", "Duda", "Duda Timur", "Duda Utara", "Sebudi", "Amerta Bhuana"],
+        "Kubu" : ["Ban", "Dukuh", "Tulamben", "Kubu", "Baturinggit", "Sukadana", "Tianyar", "Tianyar Tengah", "Tianyar Barat"]
+    },
+    "Tabanan": {
+        "Selemadeg" : ["Antap", "Bajera", "Berembeng", "Serampingan", "Selemadeg", "Pupuan Sawah", "Wanagiri", "Wanagiri Kauh", "Manikyang", "Bajera Utara",       ""],
+        "Selemadeg Timur" : ["Gadung Sari", "Dalang", "Gunung Salak", "Gadungan", "Megati", "Bantas", "Mambang", "Tangguntiti", "Beraban", "Tegal Mengkeb"],
+        "Selemadeg Barat" : ["Bengkel Sari", "Selabih", "Mundeh Kauh", "Angkah", "Mundeh Kangin", "Mundeh", "Lumbung Kauh", "Lumbung", "Tiying Gading", "Antosari", "Lalang Linggah"],
+        "Kerambitan" : ["Timpag", "Kesiut", "Batuaji", "Samsam", "Sembung Gede", "Meliling", "Baturiti", "Kukuh", "Pangkung Karung", "Kerambitan", "Tista", "Belumbang", "Penarukan", "Kelating", "Tibubiyu"],
+        "Tabanan" : ["Sesandan", "Wanasari", "Tunjuk", "Buahan", "Denbantas", "Subamia", "Dajan Peken", "Delod Peken", "Dauh Peken", "Gubug", "Bongan", "Sudimara"],
+        "Kediri" : ["Banjar Anyar", "Abian Tuwung", "Kediri", "Nyambu", "Pandak Bandung", "Nyitdah", "Pejaten", "Bengkel", "Pandak Gede", "Kaba-Kaba", "Cepaka", "Buwit", "Beraban", "Belalang", "Pangkung Tibah"],
+        "Marga" : ["Baru", "Geluntung", "Dajan Puri", "Dauh Puri", "Payangan", "Tua", "Petiga", "Marga", "Selanbawak", "Caubelayu", "Kuwum", "Batannyuh", "Peken Belayu", "Beringkit Belayu", "Kukuh", "Tegaljadi"],
+        "Baturiti" : ["Candikuning", "Antapan", "Batunya", "Baturiti", "Bangli", "Angseri", "Apuan", "Mekarsari", "Luwus", "Perean Kangin", "Perean Tengah", "Perean"],
+        "Penebel" : ["Sangketan", "Tegalinggah", "Pesagi", "Wongaya Gede", "Jatiluwih", "Senganan", "Babahan", "Biaung", "Penebel", "Mengeste", "Tengkudak", "Penatahan", "Pitra", "Tajen", "Buruan", "Riang Gede", "Jegu", "Rejasa"],
+        "Pupuan" : ["Sai", "Karya Sari", "Jelijih Punggang", "Padangan", "Bantiran", "Pupuan", "Munduk Temu", "Pajahan", "Pujungan", "Batungsel", "Sanda", "Belimbing", "Kebon Padangan", "Belatungan"]
+    },
+    "Klungkung": {
+        "Nusapenida" : ["Sakti", "Bunga Mekar", "Batumadeg", "Klumpu", "Batukandik", "Sekartaji", "Tanglad", "Pejukutan", "Suana", "Batununggul", "Kutampi", "Kutampi Kaler", "Ped", "Kampung Toyapakeh", "Lembongan", "Jungutbatu"],
+        "Banjarangkan" : ["Negari", "Takmung", "Banjarangkan", "Tusan", "Bakas", "Getakan", "Tihingan", "Aan", "Nyalian", "Bungbungan", "Timuhun", "Nyanglan", "Tohpati"],
+        "Klungkung" : ["Satra", "Tojan", "Gelgel", "Kampung Gelgel", "Jumpai", "Tangkas", "Kamasan", "Semarapura Kelod", "Semarapura Kelod Kangin", "Semarapura Kangin", "Semarapura Tengah", "Semarapura Kauh", "Semarapura Kaja", "Akah", "Manduang", "Selat", "Tegak", "Selisihan"],
+        "Dawan" : ["Kusamba", "Kampung Kusamba", "Pesinggahan", "Dawan Klod", "Gunaksa", "Sampalan Klod", "Sampalan Tengah", "Sulang", "Paksebali", "Dawan Kaler", "Pikat", "Besan"]
+    },
+    "Buleleng": {
+        "Gerokgak" : ["Tukad Sumaga", "Celukan Bawang", "Tinga Tinga", "Pengulon", "Patas", "Gerokgak", "Sanggalangit", "Musi", "Penyabangan", "Banyupoh", "Pemuteran", "Sumberkima", "Pejarakan", "Sumber Klampok"],
+        "Seririt" : ["Pangkungparuk", "Kalisada", "Banjar Asem", "Umeanyar", "Lokapaksa", "Patemon", "Pengastulan", "Seririt", "Bubunan", "Sulanyah", "Tangguwisia", "Kalianget", "Joanyar", "Ringdikit", "Ularan", "Rangdu", "Mayong", "Bestala", "Munduk Bestala", "Gunungsari", "Unggahan"],
+        "Busungbiu" : ["Umejero", "Bengkel", "Kedis", "Tinggarsari", "Subuk", "Pelapuan", "Busungbiu", "Kekeran", "Titab", "Telaga", "Sepang", "Pucaksari", "Bongancina", "Tista", "Sepang Kelod"],
+        "Banjar" : ["Kaliasem", "Temukus", "Dencarik", "Banjar", "Banjar Tegeha", "Tampekan", "Sidetapa", "Cempaga", "Tigawasa", "Pedawa", "Banyusri", "Tirtasari", "Kayuputih", "Gobleg", "Munduk", "Gesing", "Banyuatis"],
+        "Sukasada" : ["Kayuputih", "Selat", "Tegal Linggah", "Panji Anom", "Panji", "Sambangan", "Sukasada", "Padangbulia", "Pegadungan", "Silangjana", "Pegayaman", "Gitgit", "Ambengan", "Wanagiri", "Pancasari"],
+        "Buleleng" : ["Kalibukbuk", "Anturan", "Tukadmungga", "Pemaron", "Baktiseraga", "Banyuasri", "Banjar Tegal", "Paket Agung", "Beratan", "Liligundi", "Kampung Singaraja", "Kendran", "Astina", "Banjar Jawa", "Banjar Bali", "Kampung Kajanan", "Kaliuntu", "Kampung Anyar", "Kampung Bugis", "Kampung Baru", "Banyuning", "Penarukan", "Jinengdalem", "Penglatan", "Petandakan", "Sari Mekar", "Nagasepaha", "Alasangker", "Poh Bergong"],
+        "Sawan" : ["Lemukih", "Galungan", "Sekumpul", "Bebetin", "Sudaji", "Sawan", "Menyali", "Suwug", "Jagaraga", "Sinabun", "Kerobokan", "Sangsit", "Bungkulan", "Giri Emas"],
+        "Kubutambahan" : ["Tambakan", "Pakisan", "Bontihing", "Tajun", "Tunjung", "Depeha", "Bulian", "Tamblang", "Bila", "Bengkala", "Kubutambahan", "Bukti", "Mengening"],
+        "Tejakula" : ["Sembiran", "Pacung", "Julah", "Bondalem", "Madenan", "Tejakula", "Les", "Penuktukan", "Sambirenteng", "Tembok"]
+    },
+    "Bangli": {
+        "Susut" : ["Apuan", "Abuan", "Demulih", "Susut", "Sulahan", "Tiga", "Penglumbaran", "Selat", "Pengiangan"],
+        "Bangli" : ["Bunutin", "Taman Bali", "Bebalang", "Kawan", "Cempaga", "Kubu", "Kayubihi", "Pengotan", "Landih"],
+        "Tembuku" : ["Jehem", "Tembuku", "Yangapi", "Undisan", "Bangbang", "Peninjoan"],
+        "Kintamani" : ["Mengani", "Binyan", "Ulian", "Bunutin", "Langgahan", "Lembean", "Bayungcerik", "Mangguh", "Belancan", "Katung", "Banua", "Abuan", "Bonyoh", "Sekaan", "Bayung Gede", "Sekardadi", "Kedisan", "Buahan", "Suter", "Abang Batu Dinding", "Abang Songan", "Terunyan", "Songan B", "Songan A", "Batur Selatan", "Batur Tengah", "Batur Utara", "Kintamani", "Serahi", "Manikliyu", "Awan", "Belantih", "Gunungbau", "Belanga", "Batukaang", "Catur", "Pengejaran", "Satra", "Selulung", "Dausa", "Daup", "Bantang", "Kutuh", "Sukawana", "Subaya", "Siyakin", "Pinggan", "Belandingan"]
+    },
+    "Badung": {
+        "Kuta" : ["Kedonganan", "Tuban", "Kuta", "Legian", "Seminyak"],
+        "Kuta Selatan" : ["Pecatu", "Ungasan", "Kutuh", "Benoa", "Tanjung Benoa", "Jimbaran"],
+        "Kuta Utara" : ["Kerobokan Kelod", "Kerobokan", "Kerobokan Kaja", "Tibubeneng", "Canggu", "Dalung"],
+        "Mengwi" : ["Cemagi", "Munggu", "Pererenan", "Tumbak Bayuh", "Buduk", "Abianbase", "Sempidi", "Sading", "Lukluk", "Kapal", "Kekeran", "Mengwitani", "Mengwi", "Gulingan", "Penarungan", "Baha", "Werdi Bhuwana", "Sobangan", "Sembung", "Kuwum"],
+        "Abiansemal" : ["Darmasaba", "Sibang Gede", "Jagapati", "Angantaka", "Sedang", "Sibang Kaja", "Mekar Bhuana", "Mambal", "Abiansemal", "Dauh Yeh Cani", "Ayunan", "Blahkiuh", "Punggul", "Bongkasa", "Taman", "Selat", "Sangeh", "Bongkasa Pertiwi"],
+        "Petang" : ["Carangsari", "Getasan", "Pangsan", "Petang", "Sulangai", "Pelaga", "Belok/Sidan"]
+    },
+    "Denpasar": {
+        "Denpasar Timur" : ["Dangin Puri Klod", "Sumerta Kelod", "Kesiman", "Kesiman Petilan", "Kesiman Kertalangu", "Sumerta", "Sumerta Kaja", "Sumerta Kauh", "Dangin Puri", "Penatih", "Penatih Dangin Puri"],
+        "Denpasar Selatan" : ["Pemogan", "Pedungan", "Sesetan", "Serangan", "Sidakarya", "Panjer", "Renon", "Sanur Kauh", "Sanur", "Sanur Kaja"],
+        "Denpasar Barat" : ["Padangsambian Klod", "Pemecutan Klod", "Dauh Puri Kauh", "Dauh Puri Klod", "Dauh Puri", "Dauh Puri Kangin", "Pemecutan", "Tegal Harum", "Tegal Kertha", "Padangsambian", "Padangsambian Kaja"],
+        "Denpasar Utara" : ["Peguyangan Kangin", "Peguyangan Kaja", "Ubung  Kaja", "Ubung", "Peguyangan", "Tonja", "Dangin Puri Kangin", "Dangin Puri Kaja", "Dangin Puri Kauh", "Dauh Puri Kaja", "Pemecutan Kaja"]
+    }
+}
