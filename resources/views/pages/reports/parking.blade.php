@@ -116,9 +116,13 @@
                                                 <td>{{ $item->duration_display }}</td>
                                                 <td>{{ $item->carType->price_display }}</td>
                                                 <td>
-                                                    <a class="btn btn-success" href="{{ route('print-parking', ['id' => $item->id]) }}">
-                                                        Detail
-                                                    </a>
+                                                    @if (Auth::user()->role_id == 0)
+                                                        <a class="btn btn-success" href="{{ route('print-parking', ['id' => $item->id]) }}">
+                                                            Detail
+                                                        </a>
+                                                    @else
+                                                    <button class="btn btn-success" disabled="disabled">Detail</button>
+                                                    @endif
                                                 </td>
                                                         
                                             </tr>

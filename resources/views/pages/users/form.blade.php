@@ -5,7 +5,7 @@
     @endphp
     <div class="row">
         <div class="col-md-12">
-            <div class="card mb-4">
+            <div class="card mb-4"> 
                 @if ($item)
                     <form action="{{ route('update-user', ['uuid' => $item['uuid']]) }}" method="post">
                     <input type="hidden" name="id" value="{{$item->id}}">    

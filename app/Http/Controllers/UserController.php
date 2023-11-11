@@ -77,7 +77,7 @@ class UserController extends Controller
         return redirect($this->routeIndex)->with(['success'=> 'Data berhasil ditambahkan.']);
     }
 
-    public function update(EditUserRequest $request, $uuid)
+    public function update(Request $request, $uuid)
     {
         $name = $request->input('name');
         $email = $request->input('email');
