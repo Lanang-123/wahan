@@ -40,7 +40,6 @@
             <tr>
                 <td width="60">
                     {!! QrCode::size(50)->generate($item->checkin_number) !!}</td>
-
                 <td>
                     <div class="center font-16 bold" style="margin-bottom: 5px">
                         <div>Parkir Diamond</div>

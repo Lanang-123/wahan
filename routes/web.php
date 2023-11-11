@@ -16,7 +16,7 @@ Route::group(['namespace'=> 'Auth'], function () {
     Route::post('', 'LoginController@submitSignIn')->name('submit-sign-in');
     Route::get('logout', 'LoginController@logout')->name('logout');
 });
-Route::get('parking/{id}', 'CheckinController@parkingPrint')->name('print-parking');
+
 
 Route::group(['middleware'=> ['user.auth', 'user.access']], function () {
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
@@ -103,7 +103,7 @@ Route::group(['middleware'=> ['user.auth', 'user.access']], function () {
     Route::group(['prefix'=> 'checkins'], function () {
         Route::get('parking', 'CheckinController@parkingForm')->name('new-parking');
         Route::post('parking', 'CheckinController@parkingCreate')->name('create-parking');
-        
+        Route::get('parking/{id}', 'CheckinController@parkingPrint')->name('print-parking');
 
         Route::get('object', 'CheckinController@objectForm')->name('new-object');
         Route::post('object', 'CheckinController@objectCreate')->name('create-object');
