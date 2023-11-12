@@ -27,14 +27,14 @@ class UserController extends Controller
         $data = $this->users->get();
         return view('pages.users.index', compact('data'));
     }
-    
+
     public function form($uuid = null)
     {
         $item = null;
         if ($uuid) {
             $item = $this->users->getByUuid($uuid);
             if (!$item) {
-                return redirect($this->routeIndex)->with(['error'=> 'Data tidak dapat ditemukan']);
+                return redirect($this->routeIndex)->with(['error' => 'Data tidak dapat ditemukan']);
             }
         }
         $roles = $this->roles->get();
@@ -47,7 +47,7 @@ class UserController extends Controller
         if ($uuid) {
             $item = $this->users->getByUuid($uuid);
             if (!$item) {
-                return redirect($this->routeIndex)->with(['error'=> 'Data tidak dapat ditemukan']);
+                return redirect($this->routeIndex)->with(['error' => 'Data tidak dapat ditemukan']);
             }
         }
         return view('pages.users.password-form', compact('item'));
@@ -74,10 +74,10 @@ class UserController extends Controller
         ];
         $this->users->create($input);
 
-        return redirect($this->routeIndex)->with(['success'=> 'Data berhasil ditambahkan.']);
+        return redirect($this->routeIndex)->with(['success' => 'Data berhasil ditambahkan.']);
     }
 
-    public function update(EditUserRequest $request, $uuid)
+    public function update(Request $request, $uuid)
     {
         $name = $request->input('name');
         $email = $request->input('email');
@@ -87,7 +87,7 @@ class UserController extends Controller
 
         $item = $this->users->getByUuid($uuid);
         if (!$item) {
-            return redirect($this->routeIndex)->with(['error'=> 'Data tidak dapat ditemukan']);
+            return redirect($this->routeIndex)->with(['error' => 'Data tidak dapat ditemukan']);
         }
         $input = [
             'name' => $name,
@@ -98,9 +98,9 @@ class UserController extends Controller
         $this->users->update($item, $input);
 
         if (!Helper::isSuperAdmin()) {
-            return redirect()->back()->with(['success'=> 'Data berhasil diubah.']);
+            return redirect()->back()->with(['success' => 'Data berhasil diubah.']);
         }
-        return redirect($this->routeIndex)->with(['success'=> 'Data berhasil diubah.']);
+        return redirect($this->routeIndex)->with(['success' => 'Data berhasil diubah.']);
     }
 
     public function updatePassword(ChangePasswordRequest $request, $uuid)
@@ -110,12 +110,12 @@ class UserController extends Controller
 
         $item = $this->users->getByUuid($uuid);
         if (!$item) {
-            return redirect($this->routeIndex)->with(['error'=> 'Data tidak dapat ditemukan']);
+            return redirect($this->routeIndex)->with(['error' => 'Data tidak dapat ditemukan']);
         }
-        
+
         $isMatch = $this->checkPassword($item, $oldPassword);
         if (!$isMatch) {
-            return redirect(route('edit-password-user', ['uuid'=> $item->uuid]))->with(['error'=> 'Password lama yang Anda masukkan salah']);
+            return redirect(route('edit-password-user', ['uuid' => $item->uuid]))->with(['error' => 'Password lama yang Anda masukkan salah']);
         }
 
         $input = [
@@ -123,23 +123,23 @@ class UserController extends Controller
         ];
         $this->users->update($item, $input);
         if (!Helper::isSuperAdmin()) {
-            return redirect()->back()->with(['success'=> 'Data berhasil diubah.']);
+            return redirect()->back()->with(['success' => 'Data berhasil diubah.']);
         }
-        return redirect($this->routeIndex)->with(['success'=> 'Data berhasil diubah.']);
+        return redirect($this->routeIndex)->with(['success' => 'Data berhasil diubah.']);
     }
 
     public function delete($uuid)
     {
         $item = $this->users->getByUuid($uuid);
         if (!$item) {
-            return redirect($this->routeIndex)->with(['error'=> 'Data tidak dapat ditemukan']);
+            return redirect($this->routeIndex)->with(['error' => 'Data tidak dapat ditemukan']);
         }
         $this->users->delete($item);
-        return redirect($this->routeIndex)->with(['success'=> 'Data berhasil dihapus.']);
+        return redirect($this->routeIndex)->with(['success' => 'Data berhasil dihapus.']);
     }
 
     public function checkPassword($item, $oldPassword)
     {
-        return (Hash::check($oldPassword, $item->password))? true : false;
+        return (Hash::check($oldPassword, $item->password)) ? true : false;
     }
 }

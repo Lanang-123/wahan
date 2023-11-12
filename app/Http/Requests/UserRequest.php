@@ -25,10 +25,11 @@ class UserRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'email' => 'required|email|unique:users,email,'. $this->id,
+            'email' => 'required|email|unique:users,email,' . $this->id,
             'password' => 'required|confirmed|min:6',
             'role_id' => 'required|numeric',
             'job_position' => 'required',
+
         ];
     }
 }
