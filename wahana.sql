@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 09 Nov 2023 pada 10.01
+-- Waktu pembuatan: 12 Nov 2023 pada 10.39
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 7.4.2
 
@@ -104,7 +104,8 @@ INSERT INTO `checkin_object` (`id`, `ticket_id`, `order_item_id`, `use_guide`, `
 (37, 27, 37, 1, 1, 15001.00, 35000.00, NULL, '2023-09-30 05:12:14', '2023-09-30 05:12:14'),
 (38, 28, 38, 1, 1, 15001.00, 35000.00, NULL, '2023-09-30 05:12:14', '2023-09-30 05:12:14'),
 (39, 17, 39, 1, 1, 15001.00, 35000.00, NULL, '2023-11-09 21:28:06', '2023-11-09 21:28:06'),
-(40, 30, 40, 1, 1, 15001.00, 35000.00, NULL, '2023-11-09 23:24:15', '2023-11-09 23:24:15');
+(40, 30, 40, 1, 1, 15001.00, 35000.00, NULL, '2023-11-09 23:24:15', '2023-11-09 23:24:15'),
+(41, 31, 41, 1, 1, 15001.00, 35000.00, NULL, '2023-11-12 15:59:33', '2023-11-12 15:59:33');
 
 -- --------------------------------------------------------
 
@@ -152,7 +153,9 @@ INSERT INTO `checkin_parking` (`id`, `car_type_id`, `checkin_number`, `police_nu
 (18, 2, '000018', '4566', 2000.00, 2, 'test.jpg', 0, 'asing', NULL, NULL, NULL, '2023-09-22 08:58:47', '2023-09-22 08:58:47'),
 (19, 1, '000019', '5666', 5000.00, 4, 'test.jpg', 0, 'domestik', NULL, NULL, NULL, '2023-10-30 03:42:58', '2023-10-30 03:42:58'),
 (20, 2, '000020', '5677', 2000.00, 4, 'test.jpg', 0, 'domestik', NULL, NULL, NULL, '2023-10-30 03:45:46', '2023-10-30 03:45:47'),
-(21, 1, '000021', '3431', 5000.00, 3, 'test.jpg', 1, 'domestik', 'Indonesia', NULL, NULL, '2023-11-09 18:20:50', '2023-11-09 18:20:50');
+(21, 1, '000021', '3431', 5000.00, 3, 'test.jpg', 1, 'domestik', 'Indonesia', NULL, NULL, '2023-11-09 18:20:50', '2023-11-09 18:20:50'),
+(22, 2, '000022', '29121', 2000.00, 5, 'test.jpg', 1, 'domestik', 'Indonesia', NULL, NULL, '2023-11-12 00:57:56', '2023-11-12 00:57:56'),
+(23, 1, '000023', '78667', 5000.00, 3, 'test.jpg', 1, 'domestik', NULL, NULL, NULL, '2023-11-12 15:09:52', '2023-11-12 15:09:52');
 
 -- --------------------------------------------------------
 
@@ -182,7 +185,8 @@ INSERT INTO `checkin_rides` (`id`, `ride_id`, `ticket_id`, `order_item_id`, `use
 (2, 1, 7, 16, 1, 1, 300000.00, 90000.00, '2023-09-05 09:26:24', '2023-09-05 09:26:24'),
 (3, 1, 464, 22, 1, 1, 300000.00, 90000.00, '2023-09-14 20:47:36', '2023-09-14 20:47:36'),
 (4, 1, 10, 23, 1, 1, 300000.00, 90000.00, '2023-09-18 05:58:38', '2023-09-18 05:58:38'),
-(5, 1, 11, 24, 1, 1, 300000.00, 90000.00, '2023-09-18 06:00:44', '2023-09-18 06:00:44');
+(5, 1, 11, 24, 1, 1, 300000.00, 90000.00, '2023-09-18 06:00:44', '2023-09-18 06:00:44'),
+(6, 1, 31, 41, 1, 1, 300000.00, 90000.00, '2023-11-12 16:03:20', '2023-11-12 16:03:20');
 
 -- --------------------------------------------------------
 
@@ -205,7 +209,7 @@ CREATE TABLE `configs` (
 --
 
 INSERT INTO `configs` (`id`, `name`, `int_val`, `str_val`, `json_val`, `created_at`, `updated_at`) VALUES
-(1, 'order_number', 2, NULL, NULL, '2023-09-01 10:11:25', '2023-11-09 23:24:15'),
+(1, 'order_number', 1, NULL, NULL, '2023-09-01 10:11:25', '2023-11-12 15:59:33'),
 (2, 'ticket_expiration', 24, NULL, NULL, '2023-09-01 10:11:25', '2023-09-01 10:11:25');
 
 -- --------------------------------------------------------
@@ -402,7 +406,8 @@ INSERT INTO `orders` (`id`, `order_number`, `total_item`, `total_price`, `use_gu
 (19, '2023930000003', 2, 70000.00, 1, 0, 1, NULL, 1, 1, NULL, '2023-09-30 05:04:48', '2023-09-30 05:45:35', NULL),
 (20, '2023930000004', 3, 105000.00, 1, 0, 1, NULL, 1, 1, NULL, '2023-09-30 05:12:14', '2023-09-30 05:45:50', NULL),
 (21, '2023119000001', 1, 35000.00, 1, 0, 1, NULL, 1, 1, NULL, '2023-11-09 21:28:06', '2023-11-09 21:32:18', NULL),
-(22, '2023119000002', 1, 35000.00, 1, 0, 1, NULL, 0, 1, NULL, '2023-11-09 23:24:15', '2023-11-09 23:24:15', NULL);
+(22, '2023119000002', 1, 35000.00, 1, 0, 1, NULL, 0, 1, NULL, '2023-11-09 23:24:15', '2023-11-09 23:24:15', NULL),
+(23, '20231112000001', 1, 35000.00, 1, 0, 1, NULL, 0, 1, NULL, '2023-11-12 15:59:33', '2023-11-12 15:59:33', NULL);
 
 -- --------------------------------------------------------
 
@@ -462,7 +467,8 @@ INSERT INTO `order_items` (`id`, `order_id`, `product_type`, `product_id`, `prod
 (37, 20, 'ticket', 27, '{\"id\":27,\"ticket_type_id\":1,\"code\":\"LZDRWO\",\"status\":\"used\",\"created_at\":\"2023-09-02 17:36:19\",\"updated_at\":\"2023-09-30 13:12:14\",\"ticket_type_name\":\"Domestik 1\",\"status_display\":\"Used\",\"price\":\"Rp 35.000,00\",\"created_at_display\":\"02 September 2023\",\"ticket_type\":{\"id\":1,\"slug\":\"domestik-1\",\"name\":\"Domestik 1\",\"price\":35000,\"fee\":42.86,\"is_active\":1,\"created_at\":\"2023-09-02 17:28:09\",\"updated_at\":\"2023-09-30 13:00:21\",\"price_display\":\"Rp 35.000,00\",\"fee_display\":\"42,86 %\"}}', 35000.00, '2023-09-30 13:12:14', '2023-09-30 13:45:50', '2023-09-30 05:12:14', '2023-09-30 05:45:50', NULL),
 (38, 20, 'ticket', 28, '{\"id\":28,\"ticket_type_id\":1,\"code\":\"8DCVXV\",\"status\":\"used\",\"created_at\":\"2023-09-02 17:36:19\",\"updated_at\":\"2023-09-30 13:12:14\",\"ticket_type_name\":\"Domestik 1\",\"status_display\":\"Used\",\"price\":\"Rp 35.000,00\",\"created_at_display\":\"02 September 2023\",\"ticket_type\":{\"id\":1,\"slug\":\"domestik-1\",\"name\":\"Domestik 1\",\"price\":35000,\"fee\":42.86,\"is_active\":1,\"created_at\":\"2023-09-02 17:28:09\",\"updated_at\":\"2023-09-30 13:00:21\",\"price_display\":\"Rp 35.000,00\",\"fee_display\":\"42,86 %\"}}', 35000.00, '2023-09-30 13:12:14', '2023-09-30 13:45:50', '2023-09-30 05:12:14', '2023-09-30 05:45:50', NULL),
 (39, 21, 'ticket', 17, '{\"id\":17,\"ticket_type_id\":1,\"code\":\"AD6IRM\",\"status\":\"used\",\"created_at\":\"2023-09-02 02:36:19\",\"updated_at\":\"2023-11-09 13:28:06\",\"ticket_type_name\":\"Domestik 1\",\"status_display\":\"Used\",\"price\":\"Rp 35.000,00\",\"created_at_display\":\"02 September 2023\",\"ticket_image\":\"http:\\/\\/127.0.0.1:9000\\/storage\\/image\\/26fba5a8-6f21-4e7d-aefa-c5eb6b8f8db9.jpg\",\"ticket_type\":{\"id\":1,\"slug\":\"domestik-1\",\"name\":\"Domestik 1\",\"price\":35000,\"fee\":42.86,\"is_active\":1,\"image\":\"http:\\/\\/127.0.0.1:9000\\/storage\\/image\\/26fba5a8-6f21-4e7d-aefa-c5eb6b8f8db9.jpg\",\"created_at\":\"2023-09-02 02:28:09\",\"updated_at\":\"2023-10-03 13:38:53\",\"price_display\":\"Rp 35.000,00\",\"fee_display\":\"42,86 %\"}}', 35000.00, '2023-11-09 13:28:06', '2023-11-09 13:32:18', '2023-11-09 21:28:06', '2023-11-09 21:32:18', NULL),
-(40, 22, 'ticket', 30, '{\"id\":30,\"ticket_type_id\":1,\"code\":\"KH2NSQ\",\"status\":\"used\",\"created_at\":\"2023-09-02 02:36:19\",\"updated_at\":\"2023-11-09 15:24:15\",\"ticket_type_name\":\"Domestik 1\",\"status_display\":\"Used\",\"price\":\"Rp 35.000,00\",\"created_at_display\":\"02 September 2023\",\"ticket_image\":\"http:\\/\\/127.0.0.1:9000\\/storage\\/image\\/26fba5a8-6f21-4e7d-aefa-c5eb6b8f8db9.jpg\",\"ticket_type\":{\"id\":1,\"slug\":\"domestik-1\",\"name\":\"Domestik 1\",\"price\":35000,\"fee\":42.86,\"is_active\":1,\"image\":\"http:\\/\\/127.0.0.1:9000\\/storage\\/image\\/26fba5a8-6f21-4e7d-aefa-c5eb6b8f8db9.jpg\",\"created_at\":\"2023-09-02 02:28:09\",\"updated_at\":\"2023-10-03 13:38:53\",\"price_display\":\"Rp 35.000,00\",\"fee_display\":\"42,86 %\"}}', 35000.00, '2023-11-09 15:24:15', NULL, '2023-11-09 23:24:15', '2023-11-09 23:24:15', NULL);
+(40, 22, 'ticket', 30, '{\"id\":30,\"ticket_type_id\":1,\"code\":\"KH2NSQ\",\"status\":\"used\",\"created_at\":\"2023-09-02 02:36:19\",\"updated_at\":\"2023-11-09 15:24:15\",\"ticket_type_name\":\"Domestik 1\",\"status_display\":\"Used\",\"price\":\"Rp 35.000,00\",\"created_at_display\":\"02 September 2023\",\"ticket_image\":\"http:\\/\\/127.0.0.1:9000\\/storage\\/image\\/26fba5a8-6f21-4e7d-aefa-c5eb6b8f8db9.jpg\",\"ticket_type\":{\"id\":1,\"slug\":\"domestik-1\",\"name\":\"Domestik 1\",\"price\":35000,\"fee\":42.86,\"is_active\":1,\"image\":\"http:\\/\\/127.0.0.1:9000\\/storage\\/image\\/26fba5a8-6f21-4e7d-aefa-c5eb6b8f8db9.jpg\",\"created_at\":\"2023-09-02 02:28:09\",\"updated_at\":\"2023-10-03 13:38:53\",\"price_display\":\"Rp 35.000,00\",\"fee_display\":\"42,86 %\"}}', 35000.00, '2023-11-09 15:24:15', NULL, '2023-11-09 23:24:15', '2023-11-09 23:24:15', NULL),
+(41, 23, 'ticket', 31, '{\"id\":31,\"ticket_type_id\":1,\"code\":\"DHLBW6\",\"status\":\"used\",\"created_at\":\"2023-09-02 02:36:19\",\"updated_at\":\"2023-11-12 07:59:33\",\"ticket_type_name\":\"Domestik 1\",\"status_display\":\"Used\",\"price\":\"Rp 35.000,00\",\"created_at_display\":\"02 September 2023\",\"ticket_image\":\"http:\\/\\/localhost:8000\\/storage\\/image\\/26fba5a8-6f21-4e7d-aefa-c5eb6b8f8db9.jpg\",\"ticket_type\":{\"id\":1,\"slug\":\"domestik-1\",\"name\":\"Domestik 1\",\"price\":35000,\"fee\":42.86,\"is_active\":1,\"image\":\"http:\\/\\/localhost:8000\\/storage\\/image\\/26fba5a8-6f21-4e7d-aefa-c5eb6b8f8db9.jpg\",\"created_at\":\"2023-09-02 02:28:09\",\"updated_at\":\"2023-10-03 13:38:53\",\"price_display\":\"Rp 35.000,00\",\"fee_display\":\"42,86 %\"}}', 35000.00, '2023-11-12 07:59:33', NULL, '2023-11-12 15:59:33', '2023-11-12 15:59:33', NULL);
 
 -- --------------------------------------------------------
 
@@ -538,6 +544,14 @@ CREATE TABLE `roles` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data untuk tabel `roles`
+--
+
+INSERT INTO `roles` (`id`, `uuid`, `name`, `permissions`, `created_at`, `updated_at`) VALUES
+(4, '638878f1-1e68-4686-8b57-0f556d59fca1', 'Juru Parkir', '[\"master-data\",\"master-data\",\"ticket-type-list\",\"new-ticket-type\",\"edit-ticket-type\",\"create-ticket-type\",\"update-ticket-type\",\"delete-ticket-type\",\"master-data|ticket-type-list|new-ticket-type|edit-ticket-type|create-ticket-type|update-ticket-type|delete-ticket-type\",\"master-data\",\"ticket-list\",\"new-ticket\",\"edit-ticket\",\"create-ticket\",\"update-ticket\",\"delete-ticket\",\"master-data|ticket-list|new-ticket|edit-ticket|create-ticket|update-ticket|delete-ticket\",\"master-data\",\"car-type-list\",\"new-car-type\",\"edit-car-type\",\"create-car-type\",\"update-car-type\",\"delete-car-type\",\"master-data|car-type-list|new-car-type|edit-car-type|create-car-type|update-car-type|delete-car-type\",\"master-data\",\"ride-owner-list\",\"new-ride-owner\",\"edit-ride-owner\",\"create-ride-owner\",\"update-ride-owner\",\"delete-ride-owner\",\"master-data|ride-owner-list|new-ride-owner|edit-ride-owner|create-ride-owner|update-ride-owner|delete-ride-owner\",\"master-data\",\"ride-list\",\"new-ride\",\"edit-ride\",\"create-ride\",\"update-ride\",\"delete-ride\",\"master-data|ride-list|new-ride|edit-ride|create-ride|update-ride|delete-ride\",\"master-data\",\"guide-list\",\"new-guide\",\"edit-guide\",\"create-guide\",\"update-guide\",\"delete-guide\",\"master-data|guide-list|new-guide|edit-guide|create-guide|update-guide|delete-guide\",\"master-data\",\"voucher-list\",\"new-voucher\",\"edit-voucher\",\"create-voucher\",\"update-voucher\",\"delete-voucher\",\"master-data|voucher-list|new-voucher|edit-voucher|create-voucher|update-voucher|delete-voucher\",\"transaction\",\"transaction\",\"print-list\",\"new-print\",\"create-print\",\"download-print\",\"transaction|print-list|new-print|create-print|download-print\",\"transaction\",\"handover-list\",\"detail-handover\",\"accepted-handover\",\"transaction|handover-list|detail-handover|accepted-handover\",\"transaction\",\"new-parking\",\"create-parking\",\"transaction|new-parking|create-parking\",\"transaction\",\"new-order\",\"create-order\",\"check-code\",\"print-order\",\"cancel-order\",\"transaction|new-order|create-order|check-code|print-order|cancel-order\",\"transaction\",\"new-object\",\"create-object\",\"transaction|new-object|create-object\",\"transaction\",\"new-checkin-ride\",\"create-checkin-ride\",\"transaction|new-checkin-ride|create-checkin-ride\",\"transaction\",\"transfer-fee-list\",\"new-transfer-fee\",\"edit-transfer-fee\",\"create-transfer-fee\",\"form-transfer-fee\",\"transaction|transfer-fee-list|new-transfer-fee|edit-transfer-fee|create-transfer-fee|form-transfer-fee\",\"report\",\"report\",\"report-tickets\",\"report|report-tickets\",\"report\",\"report-vouchers\",\"report|report-vouchers\",\"report\",\"report-object\",\"report|report-object\",\"report\",\"report-rides\",\"report|report-rides\",\"report\",\"report-parkings\",\"report|report-parkings\",\"report\",\"report-fee-transfers\",\"report|report-fee-transfers\",\"report\",\"report-sales\",\"report|report-sales\",\"report\",\"report-cancel-order\",\"report|report-cancel-order\",\"report\",\"report-checkout\",\"report|report-checkout\"]', '2023-11-12 00:06:01', '2023-11-12 15:33:29'),
+(5, 'b6fa72cc-a610-417f-af1a-4afc29e4bd1a', 'Supervisor', '[\"master-data\",\"master-data\",\"ticket-type-list\",\"new-ticket-type\",\"edit-ticket-type\",\"create-ticket-type\",\"update-ticket-type\",\"delete-ticket-type\",\"master-data|ticket-type-list|new-ticket-type|edit-ticket-type|create-ticket-type|update-ticket-type|delete-ticket-type\",\"master-data\",\"ticket-list\",\"new-ticket\",\"edit-ticket\",\"create-ticket\",\"update-ticket\",\"delete-ticket\",\"master-data|ticket-list|new-ticket|edit-ticket|create-ticket|update-ticket|delete-ticket\",\"master-data\",\"car-type-list\",\"new-car-type\",\"edit-car-type\",\"create-car-type\",\"update-car-type\",\"delete-car-type\",\"master-data|car-type-list|new-car-type|edit-car-type|create-car-type|update-car-type|delete-car-type\",\"master-data\",\"ride-owner-list\",\"new-ride-owner\",\"edit-ride-owner\",\"create-ride-owner\",\"update-ride-owner\",\"delete-ride-owner\",\"master-data|ride-owner-list|new-ride-owner|edit-ride-owner|create-ride-owner|update-ride-owner|delete-ride-owner\",\"master-data\",\"ride-list\",\"new-ride\",\"edit-ride\",\"create-ride\",\"update-ride\",\"delete-ride\",\"master-data|ride-list|new-ride|edit-ride|create-ride|update-ride|delete-ride\",\"master-data\",\"guide-list\",\"new-guide\",\"edit-guide\",\"create-guide\",\"update-guide\",\"delete-guide\",\"master-data|guide-list|new-guide|edit-guide|create-guide|update-guide|delete-guide\",\"master-data\",\"voucher-list\",\"new-voucher\",\"edit-voucher\",\"create-voucher\",\"update-voucher\",\"delete-voucher\",\"master-data|voucher-list|new-voucher|edit-voucher|create-voucher|update-voucher|delete-voucher\",\"transaction\",\"transaction\",\"print-list\",\"new-print\",\"create-print\",\"download-print\",\"transaction|print-list|new-print|create-print|download-print\",\"transaction\",\"handover-list\",\"detail-handover\",\"accepted-handover\",\"transaction|handover-list|detail-handover|accepted-handover\",\"transaction\",\"new-parking\",\"create-parking\",\"transaction|new-parking|create-parking\",\"transaction\",\"new-order\",\"create-order\",\"check-code\",\"print-order\",\"cancel-order\",\"transaction|new-order|create-order|check-code|print-order|cancel-order\",\"transaction\",\"new-object\",\"create-object\",\"transaction|new-object|create-object\",\"transaction\",\"new-checkin-ride\",\"create-checkin-ride\",\"transaction|new-checkin-ride|create-checkin-ride\",\"transaction\",\"transfer-fee-list\",\"new-transfer-fee\",\"edit-transfer-fee\",\"create-transfer-fee\",\"form-transfer-fee\",\"transaction|transfer-fee-list|new-transfer-fee|edit-transfer-fee|create-transfer-fee|form-transfer-fee\",\"report\",\"report\",\"report-object\",\"report|report-object\",\"report\",\"report-rides\",\"report|report-rides\"]', '2023-11-12 00:34:00', '2023-11-12 00:34:00');
+
 -- --------------------------------------------------------
 
 --
@@ -563,7 +577,7 @@ INSERT INTO `tickets` (`id`, `ticket_type_id`, `code`, `status`, `created_at`, `
 (22, 1, 'SWMDVD', 'used', '2023-09-02 09:36:19', '2023-09-03 21:08:40'),
 (29, 1, 'S3DME6', 'in-stock', '2023-09-02 09:36:19', '2023-09-02 09:40:33'),
 (30, 1, 'KH2NSQ', 'used', '2023-09-02 09:36:19', '2023-11-09 23:24:15'),
-(31, 1, 'DHLBW6', 'in-stock', '2023-09-02 09:36:19', '2023-09-02 09:40:33'),
+(31, 1, 'DHLBW6', 'used', '2023-09-02 09:36:19', '2023-11-12 15:59:33'),
 (32, 1, 'HOLDG0', 'in-stock', '2023-09-02 09:36:19', '2023-09-02 09:40:33'),
 (33, 1, 'HRWDOJ', 'in-stock', '2023-09-02 09:36:19', '2023-09-02 09:40:33'),
 (34, 1, 'D7LNID', 'in-stock', '2023-09-02 09:36:19', '2023-09-02 09:40:33'),
@@ -1233,7 +1247,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `uuid`, `name`, `email`, `password`, `email_verified_at`, `role_id`, `job_position`, `is_active`, `created_at`, `updated_at`) VALUES
 (1, '2b9665bc-7222-4258-a987-d17431269cec', 'Super Administrator', 'admin@gmail.com', '$2y$10$xiKk381s1VEbqWJ8z5Ry6.mdn0846cUIAvLejESeiKJjx2pdIAhLG', '2023-09-01 10:11:25', 0, 'Super Administrator', 1, '2023-09-01 10:11:25', '2023-09-01 10:11:25'),
 (2, '53d19858-286d-4b2f-bc6b-7ae0aaa81ddf', 'Lanang Darma', 'lanangobey123@gmail.com', '$2y$16$e6b7BZ.1LmaoHvtuP4ft5OExK1CAAxBsDgJuu0j7HuhjrP.qi1YYm', '2023-11-08 10:40:07', 0, 'Super Administrator', 1, '2023-11-08 10:40:07', '2023-11-08 10:40:07'),
-(3, 'a3a5e894-0dab-4c54-b011-d386ddcdddea', 'Obey Surya', 'obey123@gmail.com', '$2y$16$DLofF/i7Jxvlzn.dWno6n.D0a.Xd8axlG1qBzD6HLTg1jR1eNet.y', '2023-11-09 02:24:32', 1, 'Petugas Parkir', 1, '2023-11-09 02:24:32', '2023-11-09 02:24:32');
+(6, '2e69dbf3-49c3-4b3e-b171-561fae0228ab', 'Teja', 'teja123@gmail.com', '$2y$10$RA0/EjOGwPmiPMc0Vh4Jbu2536W35I8nk2Y4IMK3BfGcN6GFqOXwq', '2023-11-11 12:13:44', 4, 'Petugas parkir', 1, '2023-11-12 00:13:44', '2023-11-12 00:56:40');
 
 -- --------------------------------------------------------
 
@@ -1325,6 +1339,7 @@ ALTER TABLE `migrations`
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `order_number` (`order_number`),
   ADD KEY `orders_id_guide_id_index` (`id`,`guide_id`),
   ADD KEY `orders_id_guide_id_created_at_index` (`id`,`guide_id`,`created_at`);
 
@@ -1412,19 +1427,19 @@ ALTER TABLE `car_types`
 -- AUTO_INCREMENT untuk tabel `checkin_object`
 --
 ALTER TABLE `checkin_object`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT untuk tabel `checkin_parking`
 --
 ALTER TABLE `checkin_parking`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT untuk tabel `checkin_rides`
 --
 ALTER TABLE `checkin_rides`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `configs`
@@ -1460,13 +1475,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT untuk tabel `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT untuk tabel `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT untuk tabel `rides`
@@ -1484,7 +1499,7 @@ ALTER TABLE `ride_owners`
 -- AUTO_INCREMENT untuk tabel `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `tickets`
@@ -1502,7 +1517,7 @@ ALTER TABLE `ticket_types`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `vouchers`

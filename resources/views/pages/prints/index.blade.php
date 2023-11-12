@@ -1,6 +1,12 @@
 @extends('layouts.master')
 @section('page-css')
   <link rel="stylesheet" href="{{asset('assets/styles/vendor/sweetalert2.min.css')}}">
+  <style>
+    .disabled-icon {
+            color: #888; /* Ganti dengan warna abu-abu atau warna yang diinginkan */
+            pointer-events: none; 
+        }
+  </style>
 @endsection
 @section('main-content')
     <div class="row">
@@ -56,11 +62,20 @@
                                             <td>{{ \Str::title($item->type) }}</td>
                                             <td>{{ $item->total }}</td>
                                             <td>{{ $item->status_display }}</td>
-                                            <td width="80">
-                                                <a href="{{ route('download-print', ['id' => $item->id]) }}" target="_blank" class="text-info ml-1" data-toggle="tooltip" data-placement="bottom" title="Cetak">
-                                                    <i class="h5 nav-icon i-Fax text-20 "></i>
-                                                </a>
-                                            </td>
+                                            @if(Auth::user()->role_id == 0)
+                                                <td width="80">
+                                                    <a href="{{ route('download-print', ['id' => $item->id]) }}" target="_blank" class="text-info ml-1" data-toggle="tooltip" data-placement="bottom" title="Cetak">
+                                                        <i class="h5 nav-icon i-Fax text-20"></i>
+                                                    </a>
+                                                </td>
+                                            @else
+                                                <td width="80">
+                                                    <a class="ml-1" disabled style="color: #c9c9c9 !important;" data-toggle="tooltip" data-placement="bottom" title="Tidak bisa Cetak">
+                                                        <i class="h5 nav-icon i-Fax text-20"></i>
+                                                    </a>
+                                                </td>
+                                            @endif
+
                                         </tr>
                                     @endforeach
                                 </tbody>
