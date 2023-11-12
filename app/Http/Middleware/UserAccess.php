@@ -20,7 +20,7 @@ class UserAccess
         $isSuperAdmin = (Auth::user()->role_id == 0) ? true : false;
         $permissions = \Session::get('permissions');
 
-        $notRequirePermissions = ['dashboard', 'live-dashboard', 'edit-user', 'edit-password-user', 'update-user', 'update-password-user', 'print-parking'];
+        $notRequirePermissions = ['dashboard', 'live-dashboard', 'edit-user', 'edit-password-user', 'update-user', 'update-password-user'];
         if (in_array($currentRoute, $notRequirePermissions)) {
             return $next($request);
         }
