@@ -64,7 +64,7 @@
                                             @php
                                                 $pathInfo = pathinfo($item->image);
                                                 $fileName = $pathInfo['filename'] . '.' . $pathInfo['extension'];
-                                            @endphp
+                                            @endphp 
 
                                             <td>
                                                 <img src="{{ route('show-image', ['imageName' => $fileName]) }}" width="220" alt="Gambar {{ $item->name }}">

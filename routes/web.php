@@ -11,6 +11,7 @@
 |
 */
 Route::get('/show-image/{imageName}', 'TicketTypeController@showImage')->name('show-image');
+
 Route::group(['namespace' => 'Auth'], function () {
     Route::get('', 'LoginController@signInForm')->name('sign-in-form');
     Route::post('', 'LoginController@submitSignIn')->name('submit-sign-in');

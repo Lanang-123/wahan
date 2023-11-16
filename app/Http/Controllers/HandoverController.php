@@ -107,9 +107,8 @@ class HandoverController extends Controller
 
         $product_ids = json_decode($data->product_id_json);
         $items = $this->getItems($data->type, $product_ids);
-        
-        return view('pages.prints.gelang-download', compact('items', 'data'));
-
+        return view('pages.prints.gelang-download', compact('items', 'data'));  
+ 
         $pdf = PDF::loadView('pages.prints.download', compact('items'));
         return $pdf->stream('cetak.pdf',array('Attachment' => 0));
     }

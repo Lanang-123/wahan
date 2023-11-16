@@ -70,8 +70,13 @@
                     </div>
                 </div> --}}
                 <div class="tic-wrapp">
+                    @php
+                    $pathInfo = pathinfo($item->ticket_image);
+                        $fileName = $pathInfo['filename'] . '.' . $pathInfo['extension'];
+                    @endphp 
                     @if ($item->ticket_image)
-                        <img class="img" src="{{$item->ticket_image}}"/>
+                        {{-- <img class="img" src="{{$item->ticket_image}}"/> --}}
+                        <img src="{{ route('show-image', ['imageName' => $fileName]) }}" width="220" alt="Gambar {{ $item->name }}">
                     @else
                         <img class="img" src="{{asset('/assets/images/bracelet-ticket.png')}}"/>
                     @endif

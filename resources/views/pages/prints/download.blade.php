@@ -91,8 +91,12 @@
         @if ($items AND count($items) > 0)
             @foreach ($items as $item)
                 <div class="tic-wrapp">
+                    @php
+                    $pathInfo = pathinfo($item->image);
+                        $fileName = $pathInfo['filename'] . '.' . $pathInfo['extension'];
+                    @endphp 
                     @if ($item->image)
-                        <img class="img" src="{{$item->image}}"/>
+                        <img src="{{ route('show-image', ['imageName' => $pathInfo['filename']]) }}" width="220" alt="Gambar {{ $item->name }}">
                     @else
                         <img class="img" src="{{asset('/assets/images/tiket-kosong.jpeg')}}"/>
                     @endif
