@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/show-image/{imageName}', 'TicketTypeController@showImage')->name('show-image');
 Route::group(['namespace' => 'Auth'], function () {
     Route::get('', 'LoginController@signInForm')->name('sign-in-form');
     Route::post('', 'LoginController@submitSignIn')->name('submit-sign-in');
@@ -29,6 +29,8 @@ Route::group(['middleware' => ['user.auth', 'user.access']], function () {
         Route::post('', 'TicketTypeController@create')->name('create-ticket-type');
         Route::post('{slug}', 'TicketTypeController@update')->name('update-ticket-type');
         Route::get('delete/{slug}', 'TicketTypeController@delete')->name('delete-ticket-type');
+
+
     });
 
     Route::group(['prefix' => 'tickets'], function () {

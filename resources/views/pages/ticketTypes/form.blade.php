@@ -51,7 +51,14 @@
                                 </div>
                                 @if ($item AND $item->image) 
                                     <div class="col-md-7 form-group mb-3">
-                                        <img src="{{$item->image}}" />
+                                            @php
+                                                $pathInfo = pathinfo($item->image);
+                                                $fileName = $pathInfo['filename'] . '.' . $pathInfo['extension'];
+                                            @endphp
+
+                                            <td>
+                                                <img src="{{ route('show-image', ['imageName' => $fileName]) }}" width="100" height="50" alt="Gambar {{ $item->name }}">
+                                            </td>
                                         <div class="text-mute"><small>Kosongkan kolom desain, jika tidak ingin mengganti desain tiket.</small></div>
                                     </div>
                                     

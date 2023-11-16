@@ -61,8 +61,13 @@
                                                     <span class="badge badge-danger">Tidak aktif</span>
                                                 @endif
                                             </td>
+                                            @php
+                                                $pathInfo = pathinfo($item->image);
+                                                $fileName = $pathInfo['filename'] . '.' . $pathInfo['extension'];
+                                            @endphp
+
                                             <td>
-                                                <image src="{{$item->image}}" width="220"/>
+                                                <img src="{{ route('show-image', ['imageName' => $fileName]) }}" width="220" alt="Gambar {{ $item->name }}">
                                             </td>
                                             <td width="80">
                                                 <a href="{{ route('edit-ticket-type', ['slug' => $item->slug])}}" class="text-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Edit">
