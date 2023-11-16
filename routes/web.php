@@ -17,7 +17,6 @@ Route::group(['namespace' => 'Auth'], function () {
     Route::get('logout', 'LoginController@logout')->name('logout');
 });
 
-
 Route::group(['middleware' => ['user.auth', 'user.access']], function () {
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
     Route::get('/live-dashboard', 'DashboardController@live')->name('live-dashboard');
